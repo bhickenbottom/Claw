@@ -101,3 +101,14 @@ thing.AddComponent(behavior1);
 thing.DoSomething("abcd", 1234);
 Console.ReadLine();
 ```
+
+### A Real World Example
+
+```
+Enemy enemy = new Enemy();
+enemy.AddComponent<WalkBehavior>();
+enemy.AddComponent<JumpBehavior>();
+enemy.AddComponent<ShootProjectilesBehavior>();
+enemy.Update();
+Console.ReadLine();
+```
