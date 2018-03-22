@@ -87,3 +87,17 @@ Thing: DoSomethingResult(efgh, 5678)
 Behavior: DoSomethingResult(efgh, 5678)
 Result: True
 ```
+
+### Hierarchical Components
+
+You can add components to components to compose behaviors from other behaviors.
+
+```
+Thing thing = new Thing();
+Behavior behavior1 = new Behavior();
+Behavior behavior2 = new Behavior();
+behavior1.AddComponent(behavior2);
+thing.AddComponent(behavior1);
+thing.DoSomething("abcd", 1234);
+Console.ReadLine();
+```
