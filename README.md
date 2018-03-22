@@ -117,7 +117,7 @@ public class Thing
 ```
 public component Behavior
 {
-    public override void DoSomething(Thing source, string s, int i)
+    public extend void DoSomething(Thing source, string s, int i)
     {
         extended(s, i);
         Console.WriteLine($"Behavior: DoSomething({s}, {i})");
