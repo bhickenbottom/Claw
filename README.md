@@ -1,7 +1,7 @@
 # Claw
 ## .NET Core Component Framework
 
-Claw is a very simple .NET Core component framework that doesn't allocate after the first call (or first few calls) and is fast enough for most uses (including games).
+Claw is a very simple .NET Core component framework that doesn't allocate after the first call and is fast enough for most uses (including games).
 
 ## Getting Started
 
