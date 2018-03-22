@@ -18,6 +18,8 @@ public class Thing : ComponentObject
 }
 ```
 
+Value types need to be wrapped in a `Boxed<T>`. `Boxer` will pool boxes.
+
 ### Defining a Component
 
 ```
@@ -60,6 +62,8 @@ public class Thing : ComponentObject
     }
 }
 ```
+
+Return values need to be wrapped in a `Boxed<T>` regardless of whether they're a value type. `Boxer` will pool boxes.
 
 ```
 public class Behavior : Component
